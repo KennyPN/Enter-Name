@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <string.h>
+#define SIZE 50
+
+int main (void){
+	char fname[SIZE];
+	char mname[SIZE];
+	char lname[SIZE];
+	
+	printf("Enter First Name\n");
+	scanf("%s50", fname);
+
+	printf("Enter Middle Name\n");
+	scanf("%s50", mname);
+		
+	printf("Enter Last Name\n");
+	scanf("%s50", lname);
+	strcat(fname, " ");
+	strcat(mname, " ");
+	strcat(fname, mname);
+	strcat(fname, lname);
+	printf("Your Full Name is %s\n" , fname);
+	
+	
+
+	return 0;
+	
+	
+	
+}
+
